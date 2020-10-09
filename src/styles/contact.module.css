@@ -1,0 +1,63 @@
+.formContainer {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  margin: 10px 0;
+}
+
+.formImage {
+  max-width: 500px;
+  width: 80%;
+}
+
+.formCard {
+  background-color: rgb(116, 71, 51);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 500px;
+  color: white;
+}
+
+input {
+  width: 95%;
+  min-height: 25px;
+  margin: 5px 0 15px 0;
+}
+
+textarea {
+  width: 95%;
+  height: 200px;
+  margin: 10px 0;
+}
+
+button {
+  width: 95%;
+  height: 50px;
+}
+
+.thanks {
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  input {
+    width: 95%;
+  }
+  textarea {
+    width: 95%;
+    height: 100px;
+  }
+  button {
+    width: 95%;
+  }
+  .formCard {
+    width: 100%;
+  }
+  .formImage {
+    display: none;
+  }
+}

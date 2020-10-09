@@ -1,0 +1,40 @@
+.section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+  gap: 30px;
+}
+
+.paragraph {
+  width: 100%;
+  margin: 0 20px;
+  padding: 0 20px;
+}
+
+.image {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: auto;
+}
+
+.header_image {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .paragraph {
+    width: 80%;
+    text-align: justify;
+  }
+  .image {
+    width: auto;
+    max-width: 70%;
+  }
+}

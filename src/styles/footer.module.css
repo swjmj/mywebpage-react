@@ -1,0 +1,42 @@
+.footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_media {
+  margin: 20px;
+}
+
+.social_title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 2px;
+  display: flex;
+  gap: 5px;
+}
+
+.icons {
+  height: 20px;
+  margin: auto 0;
+}
+
+.map_container {
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,43 @@
+.ContactButton {
+  background-color: rgb(116, 71, 51);
+  /* padding: 50px 0; */
+  height: 100px;
+  width: 100%;
+  display: grid;
+  align-content: center;
+  padding: 50px;
+
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.callContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.button {
+  height: 50px;
+  width: 200px;
+  max-width: 200px;
+  min-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .ContactButton {
+    place-content: center;
+    height: 100%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .callContainer {
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    height: 100%;
+    row-gap: 20px;
+  }
+}

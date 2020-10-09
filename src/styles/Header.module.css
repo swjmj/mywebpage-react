@@ -1,0 +1,59 @@
+.Header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(116, 71, 51);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+}
+
+.logo_container {
+  height: 100%;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 80%;
+}
+
+.navbar {
+  display: flex;
+  column-gap: 0;
+
+  font-size: 16px;
+  font-weight: 600;
+  height: 100%;
+}
+
+.PopUpMenu {
+  display: none;
+}
+
+.navbar li {
+  width: 80px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+.navbar li:hover {
+  -webkit-box-shadow: 0px 0px 14px -3px rgba(220, 228, 232, 1);
+  -moz-box-shadow: 0px 0px 14px -3px rgba(220, 228, 232, 1);
+  box-shadow: 0px 0px 14px -3px rgba(220, 228, 232, 1);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .PopUpMenu {
+    display: block;
+    color: white;
+  }
+}

@@ -1,0 +1,22 @@
+#Home {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+}
+
+.features {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+@media (max-width: 800px) {
+  .features {
+    flex-direction: column;
+  }
+}

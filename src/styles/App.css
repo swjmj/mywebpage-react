@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* #Header,
+#Home,
+#Features,
+#Contact,
+#ContactButton,
+#Footer {
+  border: 1px dotted red;
+} */
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(245, 245, 245);
+  display: grid;
+  justify-items: center;
+}
+#Container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1500px;
+}
+
+#ContactButton {
+  width: 100%;
+}
+
+#Features {
+  width: 100%;
+}
+
+#Footer {
+  margin-top: auto;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 600px) {
+  #Container {
+    width: 100%;
+  }
+}
