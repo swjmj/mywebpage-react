@@ -1,0 +1,9 @@
+.backg {
+  width: 90vw;
+}
+
+.container {
+  width: 100%;
+  background-image: url("/images/LandingPageAssets/background.svg");
+  background-size: cover;
+}

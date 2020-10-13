@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import Header from "./Header";
 import Footer from "./Footer";
 import ContactButton from "./ContactButton";
+import LandingPage from "./LandingPage";
 import Woops404 from "./Woops404";
 import { Route, Routes } from "react-router-dom";
 import data from "./data/link-data.json";
@@ -12,31 +13,59 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <div id="Container">
-      <Header />
+    <>
+      <div id="Container">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <WebPage>
+                <Home data={data}>
+                  <ContactButton />
+                </Home>
+              </WebPage>
+            }
+          />
+          <Route
+            path=":feature"
+            element={
+              <WebPage>
+                <Features data={data}>
+                  <ContactButton />
+                </Features>
+              </WebPage>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <WebPage>
+                <Contact />
+              </WebPage>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <WebPage>
+                <Woops404 />
+              </WebPage>
+            }
+          />
+          <Route path="/landing" element={<LandingPage />} />
+        </Routes>
+      </div>
+    </>
+  );
+}
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Home data={data}>
-              <ContactButton />
-            </Home>
-          }
-        />
-        <Route
-          path=":feature"
-          element={
-            <Features data={data}>
-              <ContactButton />
-            </Features>
-          }
-        />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Woops404 />} />
-      </Routes>
+function WebPage({ children }) {
+  return (
+    <>
+      <Header />
+      {children}
       <Footer />
-    </div>
+    </>
   );
 }
 
