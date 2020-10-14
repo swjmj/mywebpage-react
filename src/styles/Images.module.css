@@ -11,12 +11,6 @@
   place-content: center;
 }
 
-/* .text { */
-/* color: white;
-  font-size: 100px;
-  text-align: center;
-} */
-
 @media (max-width: 600px) {
   .container {
     height: 30vh;
@@ -36,6 +30,14 @@
   font-family: "Source Sans Pro", sans-serif;
   animation: reveal 3000ms ease-in-out forwards 200ms,
     glow 2500ms linear infinite 2000ms;
+}
+
+@media (min-width: 2000px) {
+  .text {
+    font-size: 200px;
+  }
+  .text_container {
+  }
 }
 
 @keyframes reveal {

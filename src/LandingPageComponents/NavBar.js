@@ -17,9 +17,12 @@ export default function NavBar() {
       />
       {useWidth() > 400 && (
         <ul className={style.nav}>
-          <li>What they say</li>
-          <li>Sign Up</li>
-          <li>About</li>
+          <li>
+            <a href="#reviews"> What they say</a>
+          </li>
+          <li>
+            <a href="#signup">Sign Up</a>
+          </li>
         </ul>
       )}
       {useWidth() <= 400 && !toggle && (
@@ -35,9 +38,12 @@ export default function NavBar() {
 function MobileNav() {
   return (
     <ul className={style.navMobile}>
-      <li>What they say</li>
-      <li>Sign Up</li>
-      <li>About</li>
+      <li>
+        <a href="#reviews">What they say</a>
+      </li>
+      <li>
+        <a href="#signup">Sign Up</a>
+      </li>
     </ul>
   );
 }

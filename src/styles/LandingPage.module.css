@@ -1,9 +1,11 @@
 .backg {
-  width: 90vw;
+  width: 100%;
+  background-image: url("/images/LandingPageAssets/background.png");
+  background-size: cover;
+  display: grid;
+  place-items: center;
 }
 
 .container {
-  width: 100%;
-  background-image: url("/images/LandingPageAssets/background.svg");
-  background-size: cover;
+  width: 90%;
 }

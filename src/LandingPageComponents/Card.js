@@ -3,7 +3,7 @@ import style from "./styles/Card.module.css";
 
 export default function Card({ data }) {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="reviews">
       <div className={style.header}>
         <img className={style.image_container} src={data.image} alt="" />
         <div>
