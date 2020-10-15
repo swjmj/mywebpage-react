@@ -24,7 +24,7 @@ export default function Contact() {
     resetCountry();
     resetText();
     setSubmitForm(true);
-    setTimeout(() => navigate("/"), 1000);
+    setTimeout(() => navigate("/mywebpage-react/"), 1000);
   };
 
   if (submitForm === true) {
@@ -38,14 +38,14 @@ export default function Contact() {
   return (
     <div id="Contact" className={styles.contact}>
       <img
-        src="/images/spill_cup.jpeg"
+        src="/mywebpage-react/images/spill_cup.jpeg"
         alt=""
         className={stylesImage.header_image}
       />
       <div className={styles.formContainer}>
         <div>
           <img
-            src="/images/writing-book.jpeg"
+            src="/mywebpage-react/images/writing-book.jpeg"
             alt=""
             className={styles.formImage}
           />

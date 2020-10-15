@@ -52,7 +52,7 @@ function App() {
               </WebPage>
             }
           />
-          <Route path="/landing" element={<LandingPage />} />
+          <Route path="/mywebpage-react/landing" element={<LandingPage />} />
         </Routes>
       </div>
     </>
