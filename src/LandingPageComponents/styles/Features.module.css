@@ -1,0 +1,8 @@
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  height: 100%;
+  gap: 20px;
+}

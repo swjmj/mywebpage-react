@@ -56,4 +56,7 @@
     display: block;
     color: white;
   }
+  .logo_container {
+    font-size: 10px;
+  }
 }

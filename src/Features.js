@@ -12,7 +12,7 @@ export default function Features({ children, data }) {
   }
   const { ad } = found;
   return (
-    <div id="Features">
+    <div>
       <img
         src="/images/spill_cup.jpeg"
         alt=""

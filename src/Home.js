@@ -9,7 +9,7 @@ export default function Home({ children, data }) {
       <Images className={styles.image} />
       {/* <div className={styles.heroText}>The Nice Cup</div>
       <div className={styles.secondHeroText}> How was your coffee today?</div> */}
-      <div className={styles.features}>
+      <div className={styles.features} id="Features">
         {data.map((image) => (
           <FeatureBox data={{ ...image }} key={image.id} />
         ))}
