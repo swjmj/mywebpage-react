@@ -17,7 +17,11 @@ export default function Header() {
   return (
     <div className={styles.Header} id="Header" ref={ref}>
       <div className={styles.logo_container} onClick={() => navigator("/")}>
-        <img src="/images/logo.png" alt="coffee logo" className={styles.logo} />
+        <img
+          src="./images/logo.png"
+          alt="coffee logo"
+          className={styles.logo}
+        />
         <h1>The Nice Cup</h1>
       </div>
       <PopUpMenu className={styles.PopUpMenu} />
