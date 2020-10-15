@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div id="sub-root">
-        <Routes basename="/mywebpage-react">
+        <Routes>
           <Route
             path="/"
             element={
@@ -52,7 +52,7 @@ function App() {
               </WebPage>
             }
           />
-          <Route path="/mywebpage-react/landing" element={<LandingPage />} />
+          <Route path="/landing" element={<LandingPage />} />
         </Routes>
       </div>
     </>

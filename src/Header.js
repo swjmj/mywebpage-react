@@ -16,15 +16,8 @@ export default function Header() {
 
   return (
     <div className={styles.Header} id="Header" ref={ref}>
-      <div
-        className={styles.logo_container}
-        onClick={() => navigator("/mywebpage-react")}
-      >
-        <img
-          src="/mywebpage-react/images/logo.png"
-          alt="logo"
-          className={styles.logo}
-        />
+      <div className={styles.logo_container} onClick={() => navigator("")}>
+        <img src="/images/logo.png" alt="logo" className={styles.logo} />
         <h1>The Nice Cup</h1>
       </div>
       <PopUpMenu className={styles.PopUpMenu} />
@@ -38,7 +31,7 @@ function FullWidthNav() {
 
   return (
     <ul className={styles.navbar}>
-      <li onClick={() => navigator("/mywebpage-react")}>
+      <li onClick={() => navigator("")}>
         <p> Home</p>
       </li>
       <li>
@@ -46,7 +39,7 @@ function FullWidthNav() {
           <a href="#Features">Features</a>
         </p>
       </li>
-      <li onClick={() => navigator("/mywebpage-react/contact")}>
+      <li onClick={() => navigator("/contact")}>
         <p>Contact</p>
       </li>
     </ul>

@@ -7,7 +7,7 @@ export default function ContactButton() {
     <div id="ContactButton" className={style.ContactButton}>
       <div className={style.callContainer}>
         <div>How do you like your coffee? Tell us!</div>
-        <Link to="/mywebpage-react/contact">
+        <Link to="/contact">
           <button className={style.button}>CONTACT US!</button>
         </Link>
       </div>
