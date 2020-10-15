@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div id="sub-root">
-        <Routes>
+        <Routes basename="mywebpage-react">
           <Route
             path="/"
             element={

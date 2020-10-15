@@ -1,6 +1,6 @@
 .backg {
   width: 100%;
-  background-image: url("/images/LandingPageAssets/background.png");
+  background-image: url("/mywebpage-react/images/LandingPageAssets/background.png");
   background-size: cover;
   display: grid;
   place-items: center;

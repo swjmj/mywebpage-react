@@ -14,7 +14,7 @@ export default function Features({ children, data }) {
   return (
     <div>
       <img
-        src="/images/spill_cup.jpeg"
+        src="/mywebpage-react/images/spill_cup.jpeg"
         alt=""
         className={styles.header_image}
       />

@@ -18,8 +18,8 @@ export default function Header() {
     <div className={styles.Header} id="Header" ref={ref}>
       <div className={styles.logo_container} onClick={() => navigator("/")}>
         <img
-          src="./images/logo.png"
-          alt="coffee logo"
+          src="/mywebpage-react/images/logo.png"
+          alt="logo"
           className={styles.logo}
         />
         <h1>The Nice Cup</h1>

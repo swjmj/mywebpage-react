@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <div className={style.container}>
       <img
-        src="/images/LandingPageAssets/logo.png"
+        src="/mywebpage-react/images/LandingPageAssets/logo.png"
         alt="logo"
         className={style.logo}
       />
